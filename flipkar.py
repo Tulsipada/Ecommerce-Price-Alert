@@ -8,17 +8,16 @@ url_telegram = "https://api.telegram.org/bot1896367564:AAFbhNbi8Rkvwl8EVaJ-kk-VD
 
 
 def priceflipkar():
-    
-    while(True):
 	headers = { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36' }
-	page = requests.get(URL, headers=headers)
-	soup = BeautifulSoup(page.content, 'html.parser')
-	title = soup.find("span", {"class": "B_NuCI"}).get_text()
-	price = float(soup.find("div", {"class": "_30jeq3 _16Jk6d"}).get_text()[1:].replace(',',''))
-	print("price chack")
-        if( price <= 2299.0 ):
-            response = requests.get(url_telegram + title + str(price))
-            time.sleep(700)
-	time.sleep(10)
+	while(True):
+		page = requests.get(URL, headers=headers)
+		soup = BeautifulSoup(page.content, 'html.parser')
+		title = soup.find("span", {"class": "B_NuCI"}).get_text()
+		price = float(soup.find("div", {"class": "_30jeq3 _16Jk6d"}).get_text()[1:].replace(',',''))
+		print("price chack")
+		if( price <= 2299.0 ):
+		    response = requests.get(url_telegram + title + str(price))
+		    time.sleep(700)
+		time.sleep(10)
 if __name__ == "__main__":
 	priceflipkar()
