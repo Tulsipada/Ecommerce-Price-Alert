@@ -14,7 +14,7 @@ def priceflipkar():
 		soup = BeautifulSoup(page.content, 'html.parser')
 		title = soup.find("span", {"class": "B_NuCI"}).get_text()
 		price = float(soup.find("div", {"class": "_30jeq3 _16Jk6d"}).get_text()[1:].replace(',',''))
-		print("price" +" "+str(price)
+		print("price" +" "+str(price))
 		if( price <= 2299.0 ):
 		    response = requests.get(url_telegram + title + str(price))
 		    time.sleep(700)
