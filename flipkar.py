@@ -17,7 +17,7 @@ def priceflipkar():
 		print("price" +" "+str(price))
 		if( price <= 2299.0 ):
 		    response = requests.get(url_telegram + title + str(price))
-		    time.sleep(700)
+		    time.sleep(70)
 		time.sleep(10)
 if __name__ == "__main__":
 	priceflipkar()
