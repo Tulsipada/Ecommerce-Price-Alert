@@ -2,8 +2,8 @@ import requests
 from bs4 import BeautifulSoup 
 import time 
 
-URL = 'https://www.flipkart.com/mi-30000-mah-power-bank-18-w-fast-charging-delivery-3-0/p/itma19cc9efdc33f?pid=PWBG2ZY9ZYYYG963&lid=LSTPWBG2ZY9ZYYYG963CB5IBR&marketplace=FLIPKART&q=mi+power+bank+30000&store=tyy%2F4mr%2Ffu6&srno=s_1_1&otracker=AS_Query_OrganicAutoSuggest_4_7_na_na_na&otracker1=AS_Query_OrganicAutoSuggest_4_7_na_na_na&fm=SEARCH&iid=309557b1-6a30-42a6-b546-feee780052ef.PWBG2ZY9ZYYYG963.SEARCH&ppt=pp&ppn=pp&ssid=a3qih6hrts0000001622911197060&qH=5745d1bcac752a45'
-url_telegram = "https://api.telegram.org/bot1896367564:AAFbhNbi8Rkvwl8EVaJ-kk-VDPRgjfXqWOA/sendMessage?chat_id=@flipkarprice&text="
+URL = ''
+url_telegram = "https://api.telegram.org/botcode/sendMessage?chat_id=@flipkarprice&text="
 
 
 
